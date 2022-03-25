@@ -87,7 +87,7 @@ class FoursquareApi {
 	 * @param String $endpoint A particular endpoint of the Foursquare API
 	 * @param Array $params A set of parameters to be appended to the request, defaults to false (none)
 	 */
-	public function GetPublic($endpoint,$params=false){
+	public function GetPublic($endpoint,$params=[]){
 		// Build the endpoint URL
 		$url = $this->BaseUrl . trim($endpoint,"/");
 		// Append the client details
